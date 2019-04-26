@@ -1,0 +1,16 @@
+{
+  "name": "my-button",
+  "version": "1.0.0",
+  "main": "lib/Button.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc && copyfiles -f src/*.scss lib/",
+    "pack": "npm pack && copyfiles *.tgz ../../../packages/",
+    "remove": "rimraf *.tgz"
+  }
+}
